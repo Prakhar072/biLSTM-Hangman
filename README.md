@@ -3,7 +3,7 @@
 By: Prakhar Mittal
 <br>
 F2022B3A70426P
-<br>
+
 # Objective:
 <br>
 To train an agent to play Hangman with an accuracy of 50% or more
