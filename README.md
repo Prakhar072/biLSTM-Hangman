@@ -4,21 +4,21 @@ By: Prakhar Mittal
 <br>
 F2022B3A70426P
 <br>
-Objective:
----------------
+# Objective:
+<br>
 To train an agent to play Hangman with an accuracy of 50% or more
 <br>
-## Constraints:
+# Constraints:
 <br>
 1. No n-gram approach
 2. Apply Formal ML models
 3. 6 Attempts maximum
 <br>
-## Model Architecture:
+# Model Architecture:
 <br>
 Bi-LSTM + Reinforcement Learning Agent(PPO Algorithm), finetuned with endgame heuristic rules
 <br>
-## Folder structure:
+# Folder structure:
 <br>
 Files: Contains 4 python scripts:
 1. v0_HangmanEnv.py
@@ -29,7 +29,7 @@ Files: Contains 4 python scripts:
 These files contain the classes and functions developed and the training has been done inside
 the testing file (main file)
 <br>
-## Thesis:
+# Thesis:
 <br>
 The idea was that a biLSTM model could understand context better than an RL agent, therefore
 if we could train it to predict letters given any state of the hidden word then we could use this as
@@ -56,14 +56,14 @@ A whopping 53% win rate on validation set (in testing dot py)
 <br>
 Final accuracy in API calls: 13.2%
 <br>
-## Setback Reasons:
+# Setback Reasons:
 <br>
 The model came really close to solving in almost all games played manually. However it could
 not win the final alphabet thus marking it a defeat. Even with the fine tuning and entropy based
 heuristics, it seems like the words used for testing were too different, rendering the heuristics
 often unlucky, and unusable.
 <br>
-## Suggestions:
+# Suggestions:
 <br>
 A deeper understanding is required for overcoming the endgame-failure barrier, otherwise the
 model seems to do well.
